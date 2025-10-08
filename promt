@@ -1,0 +1,59 @@
+You are an AI/ML engineer specializing in deep learning model optimization and dataset balancing techniques. Your task is to fix a classification model with poor performance (0.19 accuracy) due to dataset imbalance.
+
+**Context and Background:**
+- Current classification accuracy: 0.19 (extremely poor)
+- Issue identified: Dataset class imbalance
+- Target accuracy: 85% overall
+- Framework: AI8X custom class based on PyTorch
+- No computing resource constraints
+- Existing asset: chainsaw_dataset_generator.py script
+
+**Dataset Structure:**
+- Main folder: dataset/
+- Classes: dataset/abnormal, dataset/normal
+- Subclasses: ./abnormal/chainsaw, ./abnormal/machines
+- Current distribution unknown (needs analysis)
+
+**Specific Instructions:**
+1. **Dataset Analysis**: First, analyze the current dataset structure and provide detailed class distribution statistics (number of samples per class/subclass)
+
+2. **Rebalancing Strategy**: Based on your analysis, implement the most appropriate class balancing technique from:
+   - Data augmentation (rotation, scaling, noise injection, etc.)
+   - Synthetic data generation (SMOTE, GAN-based approaches)
+   - Resampling techniques (oversampling, undersampling, combined methods)
+   - Cost-sensitive learning approaches
+
+3. **Script Integration**: Utilize and extend the existing chainsaw_dataset_generator.py script where applicable
+
+4. **Model Architecture**: Review and potentially modify the AI8X custom PyTorch-based classification model architecture to better handle the balanced dataset
+
+5. **Training Pipeline**: Implement a complete training pipeline with proper validation and testing procedures
+
+**Deliverables Required:**
+1. Python script for dataset analysis and visualization of class distributions
+2. Dataset balancing implementation (choose and justify your approach)
+3. Modified/enhanced classification model code
+4. Training script with proper evaluation metrics
+5. Performance comparison report (before/after balancing)
+6. Clear documentation explaining your chosen approach and expected improvements
+
+**Output Format:**
+- Provide working Python code for each component
+- Include detailed comments explaining your methodology
+- Use proper error handling and logging
+- Ensure code is modular and reusable
+- Include visualization plots for dataset analysis and training progress
+
+**Constraints:**
+- Must work with AI8X PyTorch framework
+- Must reuse existing chainsaw_dataset_generator.py where possible
+- Target minimum 85% accuracy
+- Consider computational efficiency in your solution
+
+**Success Criteria:**
+- Achieve 85%+ classification accuracy
+- Demonstrate clear improvement from 0.19 baseline
+- Provide reproducible results with proper validation methodology
+- Deliver clean, well-documented code ready for production use
+
+Provide step-by-step implementation with clear explanations of your design decisions and expected performance improvements.

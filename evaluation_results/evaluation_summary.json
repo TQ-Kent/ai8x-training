@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-10-07 23:09:44.421575",
+  "configuration": {
+    "anomaly_model_path": "./trained_models/anomaly_detection/best_anomaly_model.pth",
+    "classification_model_path": "./trained_models/classification/best_classification_model.pth",
+    "data_dir": "./dataset",
+    "output_dir": "./evaluation_results",
+    "batch_size": 32,
+    "threshold": 0.5,
+    "optimize_threshold": false,
+    "device": "cuda",
+    "no_cuda": false,
+    "feature_type": "mfcc",
+    "n_mfcc": 13,
+    "target_length": 62,
+    "simulate_noise": false,
+    "device_id": 85,
+    "simulate": false,
+    "round_avg": false
+  },
+  "results": {
+    "anomaly_detection_accuracy": 0.9833187006145742,
+    "classification_accuracy": 0.46115013169446883,
+    "anomaly_detection_f1_avg": 0.9833171446191797,
+    "classification_f1_avg": 0.46003548179090115
+  }
+}

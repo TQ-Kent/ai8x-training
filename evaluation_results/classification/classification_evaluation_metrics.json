@@ -1,0 +1,25 @@
+{
+  "accuracy": 0.46115013169446883,
+  "precision_Chainsaw": 0.4572670207629165,
+  "recall_Chainsaw": 0.4157155399473222,
+  "f1_Chainsaw": 0.43550241434812603,
+  "support_Chainsaw": 2278,
+  "precision_Machinery": 0.46438631790744467,
+  "recall_Machinery": 0.5065847234416154,
+  "f1_Machinery": 0.48456854923367626,
+  "support_Machinery": 2278,
+  "precision_avg": 0.46082666933518057,
+  "recall_avg": 0.46115013169446883,
+  "f1_avg": 0.46003548179090115,
+  "confusion_matrix": [
+    [
+      947,
+      1331
+    ],
+    [
+      1124,
+      1154
+    ]
+  ],
+  "roc_auc": null
+}

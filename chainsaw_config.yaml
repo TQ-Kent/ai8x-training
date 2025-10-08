@@ -1,0 +1,49 @@
+# Main Configuration for Chainsaw Detection System
+
+# Audio processing settings
+AUDIO:
+  SAMPLE_RATE: 32000
+  SEGMENT_LENGTH: 1.0  # seconds
+  OVERLAP: 0.5  # 50% overlap between segments
+  FEATURE_TYPE: 'mfcc'
+  N_MELS: 40
+  N_MFCC: 13
+  N_FFT: 1024
+  HOP_LENGTH: 512
+
+# Model settings
+MODEL:
+  FC_CHANNELS: 128
+  DROPOUT_PROB: 0.3
+  TARGET_LENGTH: 62  # For 1-second audio at 32kHz with specified parameters
+
+# Training settings
+TRAINING:
+  BATCH_SIZE: 32
+  NUM_EPOCHS: 50
+  LEARNING_RATE: 0.001
+  WEIGHT_DECAY: 0.0001
+  LR_STEP_SIZE: 20
+  LR_GAMMA: 0.5
+  TEST_SIZE: 0.2
+  VAL_SIZE: 0.1
+  SEED: 42
+
+# AI8X settings
+AI8X:
+  DEVICE_ID: 85  # MAX78000
+  SIMULATE: False
+  ROUND_AVG: False
+  USE_BIAS: False
+
+# Performance targets
+PERFORMANCE:
+  MIN_ACCURACY: 0.85  # >85% accuracy target
+  MAX_INFERENCE_TIME_MS: 100
+  MEMORY_LIMIT_KB: 256
+
+# Field-adjustable parameters
+FIELD_PARAMS:
+  ANOMALY_DETECTION_THRESHOLD: 0.5
+  MIN_CONFIDENCE: 0.7
+  SENSITIVITY: 0.9
